@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/favicon.svg" sizes="any" type="image/svg+xml">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <title>Wildline</title>
+</head>
+<body>
+
+  <div class="nav-hero-container bg-[url('/img/bear.jpg')] bg-cover bg-left md:bg-center-top">
+    <nav class="p-4 flex justify-between items-center z-10 text-white backdrop-blur-md border-b-2 border-white">
+      <div class="nav-left flex items-center gap-8">
+        <div class="logo p-4 flex items-center justify-center align-middle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paw-print">
+            <circle cx="11" cy="4" r="2"/>
+            <circle cx="18" cy="8" r="2"/>
+            <circle cx="20" cy="16" r="2"/>
+            <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/>
+          </svg>
+          <span class="font-poppins text-4xl font-bold tracking-tighter leading-7">Wildline <br />Group</span>
+        </div>
+      </div>
+      <div class="nav-right flex items-center gap-4">
+        <ul class="hidden md:flex items-center font-anton text-2xl uppercase gap-8">
+          <li class="nav-link"><a href="">Home</a></li>
+          <li class="nav-link"><a href="">About us</a></li>
+          <li class="nav-link"><a href="">Blog</a></li>
+          <li class="nav-link"><a href="">Contact Us</a></li>
+        </ul>
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="burger-btn">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"/>
+            <line x1="4" x2="20" y1="6" y2="6"/>
+            <line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero p-8 md:p-0 md:bg-left flex md:grid grid-cols-2">
+      <div class="hero-text px-4 flex flex-col items-center w-full md:w-96 mx-auto py-24 gap-2 md:backdrop-brightness-75 border-2 border-t-0 border-b-0 border-white">
+        <h1 class="hero-title text-9xl uppercase font-anton text-white opacity-0 translate-y-10">Join our cause.</h1>
+        <span class="hero-span poppins font-semibold text-lg text-white opacity-0 translate-y-10">
+          Proin vitae erat at lectus pellentesque tincidunt eget nec diam. Phasellus diam magna, aliquam nec felis non, dictum placerat diam.
+        </span>
+        <button class="hero-btn px-4 py-2 bg-white font-anton uppercase tracking-wide underline text-2xl text-green-950 hover:text-white hover:bg-green-950 transition-all opacity-0 translate-y-10">Join now</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="our-mission grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-8 lg:px-32 py-12 lg:py-24 bg-gray-100">
+    <div>
+      <img src="/img/manJungle.jpg" alt="man in jungle" class="w-fit"/>
+    </div>
+    <div class="flex flex-col items-start gap-4">
+      <h2 class="font-anton uppercase text-6xl">Our Mission</h2>
+      <p class="font-poppins text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, reiciendis ad! Officiis, non distinctio? Vero vel, exercitationem esse, assumenda modi a laboriosam provident totam cumque fuga magnam sit, harum eius.</p>
+      <p class="font-poppins text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, reiciendis ad! Officiis, non distinctio? Vero vel, exercitationem esse, assumenda modi a laboriosam provident totam cumque fuga magnam sit, harum eius.</p>
+      <blockquote class="font-poppins text-gray-700">
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A error voluptatum quis ex inventore est aperiam ipsum adipisci, commodi optio, harum, unde sit?"
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="our-goals bg-[url('/img/waveyBackground.svg')] bg-auto transition-all flex flex-col items-center px-8 py-12 lg:py-24">
+    <h2 class="our-goals-title font-anton text-8xl uppercase mb-4">Our Goals</h2>
+    <div class="goals-grid w-full grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-12 lg:p-12">
+      <div id="goal-card-1" class="goals-card lg:w-80 flex flex-col gap-2 font-poppins">
+        <div class="goals-card-img-container mb-4 w-fit h-fit lg:h-80 lg:w-80 lg:aspect-square overflow-hidden">
+          <img src="/img/tigers.jpg" alt="tigers in jungle" class="lg:h-80 lg:w-auto lg:max-w-none lg:relative lg:right-24 hover:scale-110 transition-all"/>
+        </div>
+        <h2 class="font-semibold text-2xl uppercase">Clean Forests</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tree-pine"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"/><path d="M12 22v-3"/></svg>
+        <p class="leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt dolor mi, in porta nulla ullamcorper vel. Cras tempor dolor arcu.</p>
+        <span class="mt-2 goal-percentage-1 font-anton text-5xl text-green-800">
+          0%
+        </span>
+        <span class="goal-raised-1 font-semibold text-green-700">
+          £0 raised
+        </span>
+      </div>
+      <div id="goal-card-2" class="goals-card lg:w-80 flex flex-col gap-2 font-poppins">
+        <div class="goals-card-img-container mb-4 w-fit h-fit lg:h-80 lg:w-80 lg:aspect-square overflow-hidden">
+          <img src="/img/turtles.jpg" alt="turtles in ocean" class="lg:h-80 lg:w-auto lg:max-w-none lg:relative lg:right-24 hover:scale-110 transition-all"/>
+        </div>
+        <h2 class="font-semibold text-2xl uppercase">Clean Oceans</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+        <p class="leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt dolor mi, in porta nulla ullamcorper vel. Cras tempor dolor arcu.</p>
+        <span class="mt-2 goal-percentage-2 font-anton text-5xl text-green-800">
+          0%
+        </span>
+        <span class="goal-raised-2 font-semibold text-green-700">
+          £0 raised
+        </span>
+      </div>
+      <div id="goal-card-3" class="goals-card lg:w-80 flex flex-col gap-2 font-poppins">
+        <div class="goals-card-img-container mb-4 w-fit h-fit lg:h-80 lg:w-80 lg:aspect-square overflow-hidden">
+          <img src="/img/kingfisher.jpg" alt="kingfisher on lake" class="lg:h-80 lg:w-auto lg:max-w-none lg:relative lg:right-24 hover:scale-110 transition-all"/>
+        </div>
+        <h2 class="font-semibold text-2xl uppercase">Clean Air</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wind"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+        <p class="leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt dolor mi, in porta nulla ullamcorper vel. Cras tempor dolor arcu.</p>
+        <span class="mt-2 goal-percentage-3 font-anton text-5xl text-green-800">
+          0%
+        </span>
+        <span class="goal-raised-3 font-semibold text-green-700">
+          £0 raised
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <div class="search-overlay fixed top-0 left-0 hidden flex-col items-center justify-center w-[100vw] h-[100vh] z-1000 bg-green-950 animate-dropDown transition-all">
+    <h2 class="font-anton uppercase text-white text-6xl tracking-wide">Search</h2>
+    <div class="flex gap-2 border-b-4 border-white">
+      <input type="text" class="bg-green-950 font-anton uppercase text-white text-2xl focus:outline-none focus:ring-0">
+      <button class="text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+        </svg>      
+      </button>
+    </div>
+    <button class="close-search-btn text-white mt-10">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <section class="join-us grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-8 lg:px-32 py-12 lg:py-24 bg-gray-100">
+    <div class="flex flex-col items-start gap-4">
+      <h2 class="font-anton uppercase text-6xl">Join us</h2>
+      <p class="font-poppins text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, reiciendis ad! Officiis, non distinctio? Vero vel, exercitationem esse, assumenda modi a laboriosam provident totam cumque fuga magnam sit, harum eius.</p>
+      <button class="px-4 py-2 bg-green-950 font-anton uppercase tracking-wide underline text-4xl text-gray-100 hover:text-green-950 hover:bg-gray-100  transition-all">Join now</button>
+    </div>
+    <div>
+      <img src="/img/people.jpg" alt="man in jungle" class="w-fit"/>
+    </div>
+  </section>
+
+  <div class="burger-overlay fixed top-0 left-0 hidden flex-col items-center justify-center w-[100vw] h-[100vh] z-1000 bg-green-950 animate-dropDown transition-all">
+    <ul class="flex flex-col items-center font-anton uppercase text-white tracking-wide text-6xl gap-4">
+      <li class="nav-link"><a href="">Home</a></li>
+      <li class="nav-link"><a href="">About us</a></li>
+      <li class="nav-link"><a href="">Blog</a></li>
+      <li class="nav-link"><a href="">Contact</a></li>
+    </ul>
+    <button class="close-burger-btn text-white mt-10">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+        <path d="M18 6 6 18"/>
+        <path d="m6 6 12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <footer class="bg-green-950 px-8 py-16 flex flex-col gap-4 md:grid md:grid-cols-3 items-start text-white">
+    <div class="logo md:flex items-center justify-center align-middle">
+      <span class="font-poppins text-4xl font-bold tracking-tighter leading-7">Wildline <br />Group</span>
+    </div>
+    <div class="footer-item flex flex-col gap-3">
+      <h3 class="font-semibold text-2xl">Contact Us</h3>
+      <ul class="flex flex-col gap-2">
+        <li class="nav-link">enquiries@wildline.co</li>
+        <li class="nav-link">123 Wild Lane</li>
+        <li class="nav-link">London</li>
+        <li class="nav-link">L12 3AB</li>
+      </ul>
+    </div>
+    <div class="footer-item flex flex-col gap-3">
+      <h3 class="font-semibold text-2xl">Latest</h3>
+      <ul class="flex flex-col gap-2">
+        <li class="nav-link">New Donations</li>
+        <li class="nav-link">Top Stories</li>
+        <li class="nav-link">Featured Links</li>
+        <li class="nav-link">Upcoming</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

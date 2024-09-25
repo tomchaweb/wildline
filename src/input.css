@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
+
+.nav-link{
+  @apply hover:text-gray-400 transition-all;
+}
+
+.goal-card{
+  @apply lg:w-80 flex flex-col gap-2 font-poppins;
+}
